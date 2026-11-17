@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drain Duel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Drain Duel</h1>
+  <div id="turnInfo"></div>
+  <label id="oppSel">CPU <select id="opponent"><option value="simple">Simple CPU</option><option value="trained" selected>Trained CPU</option></select></label>
+  <button id="restart" data-act="restart">Restart</button>
+</header>
+<main>
+  <section id="board">
+    <div id="oppInfo" class="info"></div>
+    <div id="oppTraps" class="row traps"></div>
+    <div id="oppField" class="row field"></div>
+    <div class="divider"></div>
+    <div id="myField" class="row field"></div>
+    <div id="myTraps" class="row traps"></div>
+    <div id="myInfo" class="info"></div>
+    <div id="actions"></div>
+    <div id="hand" class="row hand"></div>
+  </section>
+  <aside id="logPanel"><h2>Log</h2><div id="log"></div></aside>
+</main>
+<div id="overlay" hidden></div>
+<script src="game.js"></script>
+<script src="ai.js"></script>
+<script src="ai/model.js" onerror="void 0"></script>
+<script src="ui.js"></script>
+</body>
+</html>

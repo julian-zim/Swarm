@@ -1,0 +1,1 @@
+Design decisions from interviews are recorded in references/DesignDocument.md. Consult it whenever something is unclear; if it does not cover the question, ask the user and append the question and answer to the latest section.
